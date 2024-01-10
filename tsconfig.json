@@ -9,8 +9,15 @@
     "target": "ES6",
     // js코드가 어디에서 동작할지 알려줌, 자동완성 기능 제공
     // 즉, 어떤 API를 사용하고, 어떤 환경에서 코드 실행하는지 열려줌
-    "lib": ["ES6", "DOM"], // ES6 지원환경, 브라우저 환경
+    "lib": ["ES6"], // ES6 지원환경(ES6), 브라우저 환경(DOM)
 		"strict": true,
-		"allowJs": true
+
+		// ts와 js 같이 사용 가능
+		// "allowJs": true,
+
+		// true로 설정할 시, commonjs 방식으로 내보낸 모듈을 es모듈 방식의 import로 가져올 수 있음
+		// 편리하지만 사용하지 않는것을 추천한다고 함
+		"esModuleInterop": true,
+		"module": "CommonJS" // node면 commonJS, 브라우저 앱이면 umd... 근데 보통 webpack을 사용할 것
 	}
 }
