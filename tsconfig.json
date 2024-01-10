@@ -11,5 +11,6 @@
     // 즉, 어떤 API를 사용하고, 어떤 환경에서 코드 실행하는지 열려줌
     "lib": ["ES6", "DOM"], // ES6 지원환경, 브라우저 환경
 		"strict": true,
+		"allowJs": true
 	}
 }
